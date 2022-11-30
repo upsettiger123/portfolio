@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Personas & Storyboarding",
+    "descr": "Investigating how users interact with communal kitchen stoves as an exercise into developing personas and storyboards.",
+    "url": 7.99,
+    "img": "images/p_and_s.png"
+  },
+  {
+    "name": "Delight Dating App",
+    "descr": "Layers of matcha crepe and matcha cream filling",
+    "url": 4.99,
+    "img": "images/delight.png"
+  },
+  {
+    "name": "Hiking To-Do List",
+    "descr": "A fluffy steamed bun with a savory egg filling",
+    "url": 2.99,
+    "img": "images/hike.png"
+  },
+  {
+    "name": "Hack @ Home",
+    "descr": "Two soft steamed buns filled with gooey purple taro filling",
+    "url": 5.99,
+    "img": "images/hack.png"
+  }
+]

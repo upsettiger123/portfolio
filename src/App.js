@@ -1,9 +1,11 @@
 import "./App.css";
 import { useState } from "react";
-import bakeryData from "./assets/bakery-data.json";
+import projectData from "./assets/project-data.json";
+import logo from "./assets/logo.png";
+import ProjectTile from "./components/ProjectTile.js";
 
 /* ####### DO NOT TOUCH -- this makes the image URLs work ####### */
-bakeryData.forEach((item) => {
+projectData.forEach((item) => {
   item.image = process.env.PUBLIC_URL + "/" + item.image;
 });
 /* ############################################################## */
@@ -14,16 +16,15 @@ function App() {
 
   return (
     <div className="App">
-      <h1>My Bakery</h1> {/* TODO: personalize your bakery (if you want) */}
-
-      {bakeryData.map((item, index) => ( // TODO: map bakeryData to BakeryItem components
-        <p>Bakery Item {index}</p> // replace with BakeryItem component
-      ))}
-
-      <div>
-        <h2>Cart</h2>
-        {/* TODO: render a list of items in the cart */}
+      <div className="logo">
+        <img src={logo}></img>
       </div>
+      <h1 className="intro">
+        Hi - I'm a designer interested in the social aspect of technology. I like to explore ways to humanize users and UX and make designs that enrich people's lives rather than distract from them.
+      </h1>
+      {projectData.map((item, index) => ( // TODO: map bakeryData to BakeryItem components
+        <ProjectTile item={item} height={'20rem'}></ProjectTile> // replace with BakeryItem component
+      ))}
     </div>
   );
 }

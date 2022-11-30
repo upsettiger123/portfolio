@@ -1,9 +1,48 @@
 /* Add styling for your page here */
 
 .App {
-
+    background-color: black;
+    padding: 0 15rem;
+    color: white;
 }
 
-.BakeryItem {
-  
+.logo {
+    position: sticky;
+    top: 0px;
+    margin-left: -15rem;
+}
+
+.logo img {
+    width: 4rem;
+    height: auto;
+    padding: 1.5rem;
+}
+
+.project-tile {
+    display: flex;
+    flex-flow: row;
+    height: 20rem;
+    padding-bottom: 3rem;
+    transition: all .25s ease-in-out; 
+    font-size: larger;
+}
+
+.project-tile:hover { 
+    transform: scale(1.03); 
+}
+
+.project-tile img {
+    background-color: white;
+}
+
+.tile-content {
+    background-color: #2B80FF;
+    width: calc(100vw - 30rem);
+    padding: 0 1rem;
+}
+
+.intro {
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 4.67rem;
 }
