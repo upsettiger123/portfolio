@@ -1,6 +1,5 @@
 import "./App.css";
 import projectData from "./assets/project-data.json";
-import logo from "./assets/logo.png";
 import ProjectTile from "./components/ProjectTile.js";
 import Personas from "./components/Personas.js";
 import Home from "./components/Home.js";

@@ -1,3 +1,5 @@
+import '../ProjectTile.css'
+
 export default function ProjectTile(props) {
     const item = props.item;
     return (

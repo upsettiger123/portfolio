@@ -1,8 +1,15 @@
-/* Add styling for your page here */
+:root {
+    --main-bg-color: black;
+    --primary: #2B80FF;
+    --primary-accent: #FFE41D;
+    --secondary-accent: #face8b;
+    --text: white;
+  }
+
 .App {
-    background-color: black;
+    background-color: var(--main-bg-color);
     padding: 0 15rem;
-    color: white;
+    color: var(--text);
     min-height: 100vh;
 }
 
@@ -18,33 +25,10 @@
     padding: 1.5rem;
 }
 
-.project-tile {
-    display: flex;
-    flex-flow: row;
-    height: 20rem;
-    padding-bottom: 3rem;
-    transition: all .25s ease-in-out; 
-    font-size: larger;
-    color: white;
-}
-
 a:link { text-decoration: none; }
 
-.project-tile:hover { 
-    transform: scale(1.03); 
-}
 
-.project-tile img {
-    background-color: white;
-}
-
-.tile-content {
-    background-color: #2B80FF;
-    width: calc(100vw - 30rem);
-    padding: 0 1rem;
-}
-
-.App h1 {
+.intro {
     font-size: 3em;
     font-weight: normal;
     margin-bottom: 4.67rem;
@@ -52,10 +36,6 @@ a:link { text-decoration: none; }
 
 .intro {
     margin-top: -1rem;
-}
-
-.page-title {
-    margin-top: -5.5rem;
 }
 
 @media all and (max-width: 1100px) {
@@ -70,30 +50,9 @@ a:link { text-decoration: none; }
     .logo img {
         padding: 0.5rem;
     }
-
-    .tile-content {
-        width: calc(100vw - 20rem);
-    }
-
-    .page-title {
-        margin-top: -4rem;
-    }
 }
 
 @media all and (max-width: 900px) {
-    .project-tile {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .project-tile img {
-        width: auto;
-    }
-
-    .tile-content {
-        width: auto;
-    }
-
     .App {
         padding: 0 5%;
     }
@@ -102,7 +61,7 @@ a:link { text-decoration: none; }
         display: none;
     }
 
-    .App h1 {
+    .intro {
         margin-top: 0;
         padding-top: 1rem;
         font-size: 1.5em;
