@@ -1,6 +1,14 @@
 .project-tile {
     display: flex;
-    flex-flow: row;
+    height: 20rem;
+    padding-bottom: 3rem;
+    transition: all .25s ease-in-out; 
+    font-size: larger;
+    color: var(--text);
+}
+
+.project-tile-noscale {
+    display: flex;
     height: 20rem;
     padding-bottom: 3rem;
     transition: all .25s ease-in-out; 
@@ -13,6 +21,10 @@
 }
 
 .project-tile img {
+    background-color: white;
+}
+
+.project-tile-noscale img {
     background-color: white;
 }
 
@@ -34,7 +46,16 @@
         height: auto;
     }
 
+    .project-tile-noscale {
+        flex-direction: column;
+        height: auto;
+    }
+
     .project-tile img {
+        width: auto;
+    }
+
+    .project-tile-noscale img {
         width: auto;
     }
 

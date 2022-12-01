@@ -16,7 +16,7 @@ export default function Home(props) {
                 </h1>
                 {props.projectData.map((item, index) => ( 
                     <Link to={"/"+item.id}>
-                        <ProjectTile item={item} height={'20rem'}></ProjectTile> 
+                        <ProjectTile item={item} home={true}></ProjectTile> 
                     </Link>
                 ))}
             </div>

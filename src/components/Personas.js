@@ -42,6 +42,7 @@ export default function Personas() {
                 <img src={logo} alt="logo"></img>
                 </Link>
             </div>
+            <div className="page-content">
             <h1 className="page-title">Personas & Storyboarding</h1>
             <h2>Investigating how users interact with communal kitchen stoves</h2>
             <div className="section">
@@ -89,6 +90,7 @@ export default function Personas() {
                 <h3>Storyboarding</h3>
                 <p>Lastly, I created a storyboard detailing a typical interaction that "Multitasking Marcy" would have with the kitchen stove.</p>
                 <ImageText img={storyboard} width={"100%"} column={false} />
+            </div>
             </div>
         </div>
     )
