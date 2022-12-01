@@ -1,8 +1,13 @@
 import "./App.css";
-import { useState } from "react";
 import projectData from "./assets/project-data.json";
 import logo from "./assets/logo.png";
 import ProjectTile from "./components/ProjectTile.js";
+import Personas from "./components/Personas.js";
+import Home from "./components/Home.js";
+import Delight from "./components/Delight.js";
+import Hike from "./components/Hike.js";
+import Hack from "./components/Hack.js";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 /* ####### DO NOT TOUCH -- this makes the image URLs work ####### */
 projectData.forEach((item) => {
@@ -11,20 +16,17 @@ projectData.forEach((item) => {
 /* ############################################################## */
 
 function App() {
-  // TODO: use useState to create a state variable to hold the state of the cart
-  /* add your cart state code here */
-
   return (
     <div className="App">
-      <div className="logo">
-        <img src={logo}></img>
-      </div>
-      <h1 className="intro">
-        Hi - I'm a designer interested in the social aspect of technology. I like to explore ways to humanize users and UX and make designs that enrich people's lives rather than distract from them.
-      </h1>
-      {projectData.map((item, index) => ( // TODO: map bakeryData to BakeryItem components
-        <ProjectTile item={item} height={'20rem'}></ProjectTile> // replace with BakeryItem component
-      ))}
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home projectData={projectData} />}></Route>
+          <Route path="personas" element={<Personas />} />
+          <Route path="delight" element={<Delight />} />
+          <Route path="hike" element={<Hike />} />
+          <Route path="hack" element={<Hack />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

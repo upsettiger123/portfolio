@@ -1,9 +1,9 @@
 /* Add styling for your page here */
-
 .App {
     background-color: black;
     padding: 0 15rem;
     color: white;
+    min-height: 100vh;
 }
 
 .logo {
@@ -25,7 +25,10 @@
     padding-bottom: 3rem;
     transition: all .25s ease-in-out; 
     font-size: larger;
+    color: white;
 }
+
+a:link { text-decoration: none; }
 
 .project-tile:hover { 
     transform: scale(1.03); 
@@ -41,8 +44,68 @@
     padding: 0 1rem;
 }
 
-.intro {
+.App h1 {
     font-size: 3em;
     font-weight: normal;
     margin-bottom: 4.67rem;
+}
+
+.intro {
+    margin-top: -1rem;
+}
+
+.page-title {
+    margin-top: -5.5rem;
+}
+
+@media all and (max-width: 1100px) {
+    .App {
+        padding: 0 10rem;
+    }
+
+    .logo {
+        margin-left: -10rem;
+    }
+
+    .logo img {
+        padding: 0.5rem;
+    }
+
+    .tile-content {
+        width: calc(100vw - 20rem);
+    }
+
+    .page-title {
+        margin-top: -4rem;
+    }
+}
+
+@media all and (max-width: 900px) {
+    .project-tile {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .project-tile img {
+        width: auto;
+    }
+
+    .tile-content {
+        width: auto;
+    }
+
+    .App {
+        padding: 0 5%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .App h1 {
+        margin-top: 0;
+        padding-top: 1rem;
+        font-size: 1.5em;
+        margin-bottom: 2rem;
+    }
 }

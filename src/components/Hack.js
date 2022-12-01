@@ -1,7 +1,7 @@
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 
-export default function Personas() {
+export default function Hack() {
     return(
         <div>
             <div className="logo">
@@ -9,7 +9,7 @@ export default function Personas() {
                 <img src={logo} alt="logo"></img>
                 </Link>
             </div>
-            <h1 className="page-title">Personas & Storyboarding</h1>
+            <h1 className="page-title">Hack @ Home</h1>
         </div>
     )
 }
