@@ -48,7 +48,7 @@ export default function Delight(props) {
             </div>
             <div className="page-content">
                 <h1 className="page-title">Delight Dating App</h1>
-                <h2>Mocking up a solution to <a href="https://www.delightapp.co/" target="_blank">Delight's</a> startup concept&mdash;a mobile dating app for more serious relationships, so you only talk to one person at a time&mdash;and iteratively designing it.</h2>
+                <h2>Mocking up a solution to <a href="https://www.delightapp.co/" target="_blank">Delight's</a> startup concept&mdash;a mobile dating app for more serious relationships, so you only talk to one person at a time&mdash;and iteratively designing it</h2>
                 <div className="section">
                     <h3>Sketches</h3>
                     <p>We began by brainstorming different interface ideas that emphasize different considerations related to common mental models and conceptual goals.</p>

@@ -10,6 +10,7 @@ export default function Hike() {
                 </Link>
             </div>
             <h1 className="page-title">Hiking To-Do List</h1>
+            <h2>Creating a hiking to do list with trails well known within driving distance from Brown's campus using an app that tracks states</h2>
         </div>
     )
 }
