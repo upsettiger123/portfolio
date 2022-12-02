@@ -89,7 +89,7 @@ export default function Personas() {
             <div className="section">
                 <h3>Storyboarding</h3>
                 <p>Lastly, I created a storyboard detailing a typical interaction that "Multitasking Marcy" would have with the kitchen stove.</p>
-                <ImageText img={storyboard} width={"100%"} column={false} />
+                <img src={storyboard} className="solo-img" alt="storyboard"></img>
             </div>
             </div>
         </div>

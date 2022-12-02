@@ -25,7 +25,7 @@ h4 {
 
 .highlight-content {
     background-color: var(--primary);
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 2rem 2rem;
 }
 
 .section {
@@ -49,6 +49,16 @@ h4 {
 
 ul, ol {
     margin: 0;
+}
+
+.solo-img {
+    max-width: 100% !important;
+}
+
+iframe {
+    width: 100%;
+    background-color: white;
+    height: 50rem;
 }
 
 .page a { 
