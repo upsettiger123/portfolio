@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "./static/css/main.e9e243bf.css",
-    "main.js": "./static/js/main.37f26786.js",
+    "main.css": "./static/css/main.a2e50803.css",
+    "main.js": "./static/js/main.27675246.js",
+    "static/media/components.png": "./static/media/components.26baac3b27a0c57f666b.png",
     "static/media/swiping_lofi.png": "./static/media/swiping_lofi.26e821e4c11b9ad2c931.png",
     "static/media/matched_lofi.png": "./static/media/matched_lofi.77a9d4d8782959490a00.png",
     "static/media/account_lofi.png": "./static/media/account_lofi.f45f6c9e8a73de80a4ed.png",
@@ -17,11 +18,11 @@
     "static/media/creation_crit.png": "./static/media/creation_crit.c9a9fb92ce3e568b567d.png",
     "static/media/tiger.svg": "./static/media/tiger.c910ed49f31fae1bb14f6df5b9020074.svg",
     "index.html": "./index.html",
-    "main.e9e243bf.css.map": "./static/css/main.e9e243bf.css.map",
-    "main.37f26786.js.map": "./static/js/main.37f26786.js.map"
+    "main.a2e50803.css.map": "./static/css/main.a2e50803.css.map",
+    "main.27675246.js.map": "./static/js/main.27675246.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9e243bf.css",
-    "static/js/main.37f26786.js"
+    "static/css/main.a2e50803.css",
+    "static/js/main.27675246.js"
   ]
 }
